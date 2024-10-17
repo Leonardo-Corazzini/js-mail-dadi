@@ -1,11 +1,21 @@
 // traccia uno
 const emailutente = prompt('Inserisci la tua email')
 const emailRegistrate = ['leocora10@gmail.com','ronaldogoat7@gmail.com']
+let emailRegistrata = false
 for(let i = 0; i < emailRegistrate.length; i++){
     if (emailRegistrate[i]=== emailutente){
-        console.log('Email corretta')
-    } 
+        emailRegistrata = true
+    }
 }
+   
+if (emailRegistrata === true){
+    console.log('Bentornato caro utente')
+} else {
+    console.log('La email inserita non è associata a nessun account')
+}
+    
+
+
 // traccia due
 const numeroUtente = Math.floor(Math.random() * 6)
 console.log(numeroUtente)
