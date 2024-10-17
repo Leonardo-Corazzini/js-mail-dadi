@@ -7,10 +7,9 @@ if (emailRegistrate.includes(emailutente)){
     console.log(`${emailutente} non è associata a nessun account, si prega di accedere con una associata o di creare un nuovo account`)
 }
 // traccia due
-const dado = [1,2,3,4,5,6]
-const numeroUtente = dado[Math.floor(Math.random() * dado.length)]
+const numeroUtente = Math.floor(Math.random() * 6)
 console.log(numeroUtente)
-const numeroPc = dado[Math.floor(Math.random() * dado.length)]
+const numeroPc =Math.floor(Math.random() * 6)
 console.log(numeroPc)
 if (numeroUtente > numeroPc){
     console.log('Bravo hai vinto')
