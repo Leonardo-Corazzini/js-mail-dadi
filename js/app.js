@@ -15,4 +15,10 @@ console.log(numeroPc)
 if (numeroUtente > numeroPc){
     console.log('Bravo hai vinto')
     
-} console.log('hahahaha hai perso')
+} else if (numeroUtente === numeroPc){
+    console.log('ah abbiamo pareggiato!')
+} else {
+    console.log('hahahaha hai perso')
+}
+ 
+
